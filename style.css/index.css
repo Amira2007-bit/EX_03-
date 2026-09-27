@@ -1,0 +1,221 @@
+*{
+    margin:0px ;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.section{
+    background-image: url("./images/bg3-8907ec01.jpg");
+    background-size: cover;
+    min-height: 100vh;
+    position: relative; 
+
+}
+.section .head{
+    text-align: center;
+    color: white;
+    position:absolute ;
+    background-color: #09c;
+    width: 100%;
+} 
+.box{
+    width: 300px;
+    margin:0px  auto;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    top: 170px;
+}
+.box img{
+    width: 100%;
+    display: block;
+}
+.box:hover img{
+    transform: scale(1.2);
+    transition-duration: 2s;
+    transition-delay: 2s;
+}
+.box .layout{
+    background-color: rgba(28, 44, 60,0.85);
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    color: white;
+    opacity: 0;
+    transition-duration:2s;
+    overflow: hidden;
+}
+.box:hover .layout{
+    opacity: 1;
+    transform: rotateZ(360deg);
+    margin: auto;
+}
+.box .layout h2{
+    padding-block: 12px;
+   background-color: rgb(42, 62, 86);
+    margin-bottom: 15px;
+    transform: translate(100%);
+}
+.box .layout p{
+    transform: translate(100%);
+    padding-inline: 20px;
+}
+.box:hover .layout h2{
+    transform: translate(0%);
+    transition-delay: 4s;
+    transition-duration: 2s;
+    
+}
+.box:hover .layout p{
+    transform: translate(0%);
+    transition-delay: 5s;
+    transition-duration: 2s;
+}
+
+/* ************************************************************ */
+.test{
+    background-image: url("./images/bg3-8907ec01.jpg");
+    background-size: cover; 
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.test .head h1{
+    text-align: center;
+    color: white;
+    position:absolute ;
+    background-color: #09c;
+    width: 100%;
+    top: 100%;
+    left: 0%;
+} 
+.card{
+    width: 300px;
+    position: relative;
+}
+.test .card .front {
+    transition-duration: 2s;
+    backface-visibility: hidden;
+}
+.test .front  img{
+    width: 100%;
+    height: 100%;
+}
+.test .card:hover .front  {
+    transform: rotateY(180deg);
+} 
+.test .card .back{
+    width: 100%;
+    height: 100%;
+    position: absolute; 
+    top: 0%;
+    left: 0%;
+    background-color: white;
+    transform: rotateY(180deg);
+    backface-visibility: hidden; 
+    transition-duration: 2s;
+}
+.test .card .back .content{
+    position: relative;
+    overflow: hidden;
+}
+.test .card .back::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #697888;
+    width: 0%;
+    height: 0%;
+    transform: translate(-50%,-50%);
+    border-radius: 100%;
+    transition-duration: 2s;
+    transition-delay: 2s;
+}
+.test .card:hover .back::before{
+    width: 100%;
+    height: 100%;
+    border-radius: 0%;
+}
+.test .card:hover .back {
+    transform: rotateY(0deg);
+}
+
+.test .back h3{
+    background-color: rgb(42, 62, 86);
+    text-align: center;
+    padding-block: 15px;
+    font-size: 30px;
+    font-weight: bolder 900px;
+    color: white;
+    transform: translate(100%);
+}
+.test .card:hover .back h3{
+    transform: translate(0%);
+    transition-duration: 2s;
+    transition-delay: 4s;
+} 
+ 
+.test .back p{
+    text-align: center;
+    padding-inline: 10px;
+    color: white;
+    padding: 15px;
+}
+.test .back  .content> p{
+    transform: translate(100%); 
+}
+.test .card:hover .back .content > p{
+    transform: translate(0%);
+    transition-duration: 2s;
+    transition-delay: 6s; 
+}
+.test .back h4{
+    text-align: center;
+    padding-block: 20px;
+    font-size: 20px;
+    color: #00ff01;
+    transform: translate(100%); 
+    transform: scale(0); 
+}
+.test .card:hover .back h4{
+    transform: scale(1);
+    transition-duration: 1.5s;
+    transition-delay: 8s;
+} 
+.test .card .back .content .skills{
+    display: flex;
+    flex-wrap: wrap;
+}
+.test .card .back .content .skills .skill{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+    transform: scale(0);
+}
+.test .card .back .content .skills .skill .item{
+    width: fit-content;
+    background-color: #00ff01;
+    margin: auto;
+    padding-inline: 14px;
+}
+.test .card:hover .back .content .skills .skill:nth-child(1){
+    transform: scale(1);
+    transition-duration: 1.5s;
+    transition-delay: 9.5s;
+}
+.test .card:hover .back .content .skills .skill:nth-child(2){
+    transform: scale(1);
+    transition-duration: 1.5s;
+    transition-delay: 11s;
+}
+.test .card:hover .back .content .skills .skill:nth-child(3){
+    transform: scale(1);
+    transition-duration: 1.5s;
+    transition-delay: 12.5s;
+}
+.test .card:hover .back .content .skills .skill:nth-child(4){
+    transform: scale(1);
+    transition-duration: 1.5s;
+    transition-delay: 14.5s;
+}
